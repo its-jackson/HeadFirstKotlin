@@ -18,15 +18,14 @@ fun main(args: Array<String>) {
         println("x is now $x.")
     }
 
-    if (x == 20) {
+    if (x == 20)
         println("x must be 20.")
-    } else {
+    else
         println("x isn't 20.")
-    }
 
-    if (name.equals("Cormoran")) {
+
+    if (name.equals("Cormoran"))
         println("$name Strike")
-    }
 
     // If statements can be used as Expressions to directly return a value.
     // When using an if statement as an expression you MUST have the "else" clause.
@@ -40,10 +39,9 @@ fun main(args: Array<String>) {
     while (z < 3) {
         print(if (z == 1) "Yab" else "Dab")
         print("ba")
-        z += +1
+        z += 1
     }
 
-    if (z == 3) {
+    if (z == 3)
         print("Do")
-    }
 }
