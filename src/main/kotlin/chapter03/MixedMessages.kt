@@ -12,6 +12,7 @@ fun main(args: Array<String>) {
         for (inner in 4 downTo 2) {
             // x += 6 ; x == 27 x 3 == 81 ; y == 23
             // x-- ; x == 18 ; y == 23
+            // y = x + y ; x == 27 ; y == 131
             y++
             x += 3
         }
