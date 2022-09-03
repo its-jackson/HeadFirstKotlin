@@ -7,8 +7,8 @@ fun main(args: Array<String>) {
     printResult(gameChoice, userChoice)
 }
 
-//You can omit the return type since the compiler can infer it.
-//fun getGameChoice(options: Array<String>): String = options[(Math.random() * options.size).toInt()]
+// You can omit the return type since the compiler can infer it.
+// fun getGameChoice(options: Array<String>): String = options[(Math.random() * options.size).toInt()]
 fun getGameChoice(options: Array<String>) = options[(Math.random() * options.size).toInt()]
 
 fun getUserChoice(options: Array<String>): String {
