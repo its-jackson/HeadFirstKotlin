@@ -1,7 +1,5 @@
 package chapter03
 
-import java.util.*
-
 fun main(args: Array<String>) {
     val options = arrayOf("Rock", "Paper", "Scissors")
     val gameChoice = getGameChoice(options)
@@ -11,8 +9,7 @@ fun main(args: Array<String>) {
 
 //You can omit the return type since the compiler can infer it.
 //fun getGameChoice(options: Array<String>): String = options[(Math.random() * options.size).toInt()]
-fun getGameChoice(options: Array<String>) =
-    options[(Math.random() * options.size).toInt()]
+fun getGameChoice(options: Array<String>) = options[(Math.random() * options.size).toInt()]
 
 fun getUserChoice(options: Array<String>): String {
     var isValidChoice = false
@@ -34,11 +31,13 @@ fun getUserChoice(options: Array<String>): String {
 }
 
 fun printResult(gameChoice: String, userChoice: String): Unit {
-    val result: String = if (userChoice == gameChoice) "Tie!"
-    else if ((userChoice == "Rock" && gameChoice == "Scissors" ||
-                userChoice == "Paper" && gameChoice == "Rock" ||
-                userChoice == "Scissors" && gameChoice == "Paper")) "You win!"
-    else "You lose!"
+    val result =
+        if (userChoice == gameChoice) "Tie!"
+        else if ((userChoice == "Rock" && gameChoice == "Scissors" ||
+                    userChoice == "Paper" && gameChoice == "Rock" ||
+                    userChoice == "Scissors" && gameChoice == "Paper")
+        ) "You win!"
+        else "You lose!"
 
     println("You chose $userChoice. I chose $gameChoice. $result")
 }
