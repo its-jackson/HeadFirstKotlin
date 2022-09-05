@@ -46,4 +46,5 @@ fun main(args: Array<String>) {
     w = null
     // throws an NPE as w is null.
     // var z = w!!.hunger
+    //
 }
