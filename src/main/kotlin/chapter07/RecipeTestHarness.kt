@@ -2,7 +2,9 @@ package chapter07
 
 fun main(args: Array<String>) {
     val thaiCurryRecipes = Recipe.findRecipes("Thai Curry")
-    thaiCurryRecipes.forEachIndexed { index, recipe -> println("index is $index toString is $recipe") }
+    thaiCurryRecipes.forEachIndexed { index, recipe ->
+        println("index is $index toString is $recipe")
+    }
 
     val r1 = Recipe("Thai Curry", "Chicken")
     val r2 = Recipe("Thai Curry", "Chicken")
