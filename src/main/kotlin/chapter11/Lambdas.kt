@@ -32,9 +32,10 @@ fun main(args: Array<String>) {
     // val inTons = combine(getConversionLambda("KgsToPounds"), getConversionLambda("PoundsToUSTons"))(1000.0)
     val inTons = kgsToTonsLambda(1000.0)
     println("1000 kgs to US tons is: $inTons")
-
 }
 
+// A type alias lets you provide an alternative name for an existing
+// type. You define a type alias using typealias.
 typealias DoubleConversion = (Double) -> Double
 
 fun convertFive(converter: DoubleConversion): Double = converter(5.0)
